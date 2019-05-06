@@ -1,4 +1,4 @@
-package DAL.DAO;
+package DAL.DAO.Interface;
 
 import DAL.DTO.Interface.IUser;
 
