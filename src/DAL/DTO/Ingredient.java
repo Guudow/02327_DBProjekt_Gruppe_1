@@ -1,5 +1,7 @@
 package DAL.DTO;
 
+import DAL.DTO.Interface.IIngredient;
+
 public class Ingredient implements IIngredient {
 
     private int ingredientID;

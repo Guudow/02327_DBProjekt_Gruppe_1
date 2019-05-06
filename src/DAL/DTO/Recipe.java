@@ -1,5 +1,7 @@
 package DAL.DTO;
 
+import DAL.DTO.Interface.IRecipe;
+
 public class Recipe implements IRecipe {
 
     private int ingredientID;

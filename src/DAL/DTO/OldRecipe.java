@@ -1,5 +1,7 @@
 package DAL.DTO;
 
+import DAL.DTO.Interface.IOldRecipe;
+
 public class OldRecipe implements IOldRecipe {
 
     private int oldRecipeID;

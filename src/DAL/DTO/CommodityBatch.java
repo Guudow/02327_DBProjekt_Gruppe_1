@@ -1,5 +1,7 @@
 package DAL.DTO;
 
+import DAL.DTO.Interface.ICommodityBatch;
+
 import java.util.List;
 
 public class CommodityBatch implements ICommodityBatch {
