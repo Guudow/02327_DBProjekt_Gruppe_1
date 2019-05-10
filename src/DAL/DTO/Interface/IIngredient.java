@@ -1,4 +1,4 @@
-package DAL.DTO;
+package DAL.DTO.Interface;
 
 public interface IIngredient {
 

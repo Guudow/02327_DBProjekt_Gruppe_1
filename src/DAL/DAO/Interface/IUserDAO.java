@@ -1,6 +1,6 @@
-package DAL.DAO;
+package DAL.DAO.Interface;
 
-import DAL.DTO.IUser;
+import DAL.DTO.Interface.IUser;
 
 import java.util.List;
 

@@ -1,5 +1,7 @@
 package DAL.DTO;
 
+import DAL.DTO.Interface.IProduct;
+
 import java.util.List;
 
 public class Product implements IProduct {

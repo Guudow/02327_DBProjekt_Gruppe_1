@@ -1,5 +1,7 @@
 package DAL.DTO;
 
+import DAL.DTO.Interface.IUser;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

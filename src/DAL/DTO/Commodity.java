@@ -1,5 +1,7 @@
 package DAL.DTO;
 
+import DAL.DTO.Interface.ICommodity;
+
 public class Commodity implements ICommodity {
 
     private int commodityID;

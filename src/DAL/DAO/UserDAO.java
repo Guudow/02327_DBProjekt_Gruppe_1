@@ -1,6 +1,7 @@
 package DAL.DAO;
 
-import DAL.DTO.IUser;
+import DAL.DAO.Interface.IUserDAO;
+import DAL.DTO.Interface.IUser;
 
 import java.sql.Connection;
 import java.util.List;
