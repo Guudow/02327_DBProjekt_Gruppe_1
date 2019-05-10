@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9acbe66-ed3a-4326-bd99-602fc8ecfa58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DAL/DAO/Connector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAL/DAO/Interface/IRecipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAL/DAO/PantherPharma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DAO/Connection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DAO/Interface/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DAO/Interface/IUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DTO/Commodity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/CommodityBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DTO/CommodityBatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DTO/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/ICommodity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/ICommodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/ICommodity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/ICommodityBatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/ICommodityBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/ICommodityBatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/IIngredient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/IIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/IIngredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/IOldRecipe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/IOldRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/IOldRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/IProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/IProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/IProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/IRecipe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/IRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/IRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/IUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Interface/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/IUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/OldRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DTO/OldRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DTO/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DTO/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DTO/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DAO/PantherPharma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DAO/PantherPharma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAL/DTO/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DTO/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,11 +22,53 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DAL/DAO/PantherPharma.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+            <state relative-caret-position="391">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAL/DTO/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#747#748#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAL/DAO/Interface/IUserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/IUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -137,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/IProduct.java" />
         <option value="$PROJECT_DIR$/src/DAL/DTO/Product.java" />
         <option value="$PROJECT_DIR$/src/DAL/DAO/PantherPharma.java" />
+        <option value="$PROJECT_DIR$/src/DAL/DTO/User.java" />
       </list>
     </option>
   </component>
@@ -218,7 +235,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557483827126" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557487185759" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Aflevering 2 Database" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -253,10 +270,18 @@
       <updated>1557143830033</updated>
       <workItem from="1557143832498" duration="2377000" />
     </task>
+    <task id="LOCAL-00001" summary="Tilføjet forskellige metoder">
+      <created>1557483971115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557483971115</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6714000" />
+    <option name="totallyTimeSpent" value="10476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="2" width="1518" height="868" extended-state="0" />
@@ -297,7 +322,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rettet konflikt" />
-    <option name="LAST_COMMIT_MESSAGE" value="rettet konflikt" />
+    <MESSAGE value="Tilføjet forskellige metoder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tilføjet forskellige metoder" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/DAL/DTO/Commodity.java">
@@ -350,31 +376,10 @@
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/io/Serializable.java" />
-    <entry file="file://$PROJECT_DIR$/src/DAL/DTO/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/IUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAL/DTO/Ingredient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAL/DAO/Interface/IUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -429,35 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAL/DTO/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding>
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAL/DAO/Interface/IConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -509,10 +485,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAL/DTO/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAL/DAO/Interface/Interface/IUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAL/DAO/Interface/IUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAL/DTO/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAL/DAO/PantherPharma.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        <state relative-caret-position="391">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

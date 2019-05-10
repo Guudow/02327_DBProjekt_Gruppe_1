@@ -26,7 +26,37 @@ public class PantherPharma {
         }
     }
 
-    public void createProduct (Product product) throws DALException {
+    public void updateRecipe(Recipe recipe) throws DALException {
+        try (Connection c = createConnection()) {
+            PreparedStatement prep = c.prepareStatement("UPDATE Recipies SET " +
+                    "ingredientID = ?, userID = ?, date = date, edition = edition++" +
+                    "WHERE recipeID = ?");
+            prep.setInt(1, recipe.getIngredientID());
+            prep.setInt(2, recipe.getUserID());
+            prep.setFloat(4, recipe.getEdition());
+            prep.setInt(5, recipe.getUserID());
+            prep.executeUpdate();
+
+        } catch (SQLException e){
+            throw new DALException(e.getMessage());
+        }
+    }
+
+    public void deleteRecipe(int recipeID) throws DALException {
+        try (Connection c = createConnection()) {
+            PreparedStatement prep = c.prepareStatement("DELETE FROM Recipies WHERE recipeID = ?;");
+            prep.setInt(1, recipeID);
+            prep.executeUpdate();
+
+
+        } catch (SQLException e) {
+            throw new DALException(e.getMessage());
+        }
+    }
+}
+
+
+    public void finishedProduct (Product product) throws DALException {
         try (Connection c = createConnection()) {
             PreparedStatement prep = c.prepareStatement("INSERT INTO Products (productID, recipeID, " +
                     "productBatchID, userID, commodityID, productName) " +
@@ -53,22 +83,4 @@ public class PantherPharma {
                     "Ukup0gpSceh8YVvNkjPad");
         } catch (SQLException e) {
             throw new DALException(e.getMessage());
-        } }
-
-    public class DALException extends Exception {
-        //Til Java serialisering...
-        private static final long serialVersionUID = 7355418246336739229L;
-
-        public DALException(String msg, Throwable e) {
-            super(msg,e);
-        }
-
-        public DALException(String msg) {
-            super(msg);
-        }
-
-    }
-
-
-
-}
+        } }}
