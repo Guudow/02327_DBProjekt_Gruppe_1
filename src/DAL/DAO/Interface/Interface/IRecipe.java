@@ -1,4 +1,4 @@
-package DAL.DTO.Interface;
+package DAL.DAO.Interface.Interface;
 
 public interface IRecipe {
 
@@ -16,7 +16,7 @@ public interface IRecipe {
      void setRecipeID(int recipeID);
 
 
-     int getEdition();
+     float getEdition();
 
      void setEdition(int edition);
 

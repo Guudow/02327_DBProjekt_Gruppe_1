@@ -1,4 +1,4 @@
-package DAL.DTO.Interface;
+package DAL.DAO.Interface.Interface;
 
 import java.util.List;
 

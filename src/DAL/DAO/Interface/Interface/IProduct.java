@@ -1,4 +1,4 @@
-package DAL.DTO.Interface;
+package DAL.DAO.Interface.Interface;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ public interface IProduct {
 
     String getProductID();
 
-    void setProductID(String productID);
+    void setProductID(int productID);
 
     int getRecipeID();
 

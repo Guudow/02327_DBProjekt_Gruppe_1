@@ -1,6 +1,6 @@
 package DAL.DTO;
 
-import DAL.DTO.Interface.ICommodityBatch;
+import DAL.DAO.Interface.Interface.ICommodityBatch;
 
 import java.util.List;
 

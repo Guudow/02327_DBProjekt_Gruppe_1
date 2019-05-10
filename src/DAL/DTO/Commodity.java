@@ -1,6 +1,6 @@
 package DAL.DTO;
 
-import DAL.DTO.Interface.ICommodity;
+import DAL.DAO.Interface.Interface.ICommodity;
 
 public class Commodity implements ICommodity {
 

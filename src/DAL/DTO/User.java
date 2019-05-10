@@ -1,6 +1,6 @@
 package DAL.DTO;
 
-import DAL.DTO.Interface.IUser;
+import DAL.DAO.Interface.Interface.IUser;
 
 import java.io.Serializable;
 import java.util.ArrayList;

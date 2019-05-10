@@ -1,6 +1,6 @@
 package DAL.DTO;
 
-import DAL.DTO.Interface.IOldRecipe;
+import DAL.DAO.Interface.Interface.IOldRecipe;
 
 public class OldRecipe implements IOldRecipe {
 
