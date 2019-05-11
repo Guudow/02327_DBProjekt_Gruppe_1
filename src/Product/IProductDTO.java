@@ -1,8 +1,8 @@
-package DAL.DTO.Interface;
+package Product;
 
 import java.util.List;
 
-public interface IProduct {
+public interface IProductDTO {
 
     String getProductID();
 

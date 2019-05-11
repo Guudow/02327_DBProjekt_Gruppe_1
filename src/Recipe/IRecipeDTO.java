@@ -1,6 +1,6 @@
-package DAL.DTO.Interface;
+package Recipe;
 
-public interface IRecipe {
+public interface IRecipeDTO {
 
 
      int getIngredientID();

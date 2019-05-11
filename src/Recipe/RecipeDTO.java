@@ -1,15 +1,15 @@
-package DAL.DTO;
+package Recipe;
 
-import DAL.DTO.Interface.IRecipe;
+import Recipe.IRecipeDTO;
 
-public class Recipe implements IRecipe {
+public class RecipeDTO implements IRecipeDTO {
 
     private int ingredientID;
     private String date;
     private int recipeID;
     private int edition;
 
-    public Recipe(int ingredientID, String date, int recipeID, int edition) {
+    public RecipeDTO(int ingredientID, String date, int recipeID, int edition) {
         this.ingredientID = ingredientID;
         this.date = date;
         this.recipeID = recipeID;
@@ -41,8 +41,6 @@ public class Recipe implements IRecipe {
         this.recipeID = recipeID;
     }
 
-
-
     public int getEdition() {
         return edition;
     }
@@ -51,11 +49,9 @@ public class Recipe implements IRecipe {
         this.edition = edition;
     }
 
-
-
     @Override
     public String toString() {
-        return "Recipe{" +
+        return "RecipeDTO{" +
                 "ingredientID=" + ingredientID +
                 ", date=" + date +
                 ", recipeID=" + recipeID +

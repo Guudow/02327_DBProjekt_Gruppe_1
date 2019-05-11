@@ -1,7 +1,7 @@
-package DAL.DAO;
+package User;
 
-import DAL.DAO.Interface.IUserDAO;
-import DAL.DTO.Interface.IUser;
+import User.IUserDTO;
+import User.IUserDAO;
 
 import java.sql.Connection;
 import java.util.List;
@@ -15,7 +15,7 @@ public class UserDAO implements IUserDAO {
     }
 
     @Override
-    public void createUser(IUser userID, IUser user) throws DALException {
+    public void createUser(IUserDTO userID, IUserDTO user) throws DALException {
 
 
         if (userID.equals(user) && user.getRolesID().contains("admin")) {
@@ -27,17 +27,17 @@ public class UserDAO implements IUserDAO {
     }
 
     @Override
-    public IUser getUser(int userID) throws DALException {
+    public IUserDTO getUser(int userID) throws DALException {
         return null;
     }
 
     @Override
-    public List<IUser> getUserList() throws DALException {
+    public List<IUserDTO> getUserList() throws DALException {
         return null;
     }
 
     @Override
-    public void updateUser(IUser user) throws DALException {
+    public void updateUser(IUserDTO user) throws DALException {
 
     }
 

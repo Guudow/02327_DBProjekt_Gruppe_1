@@ -1,17 +1,15 @@
-package DAL.DTO;
-
-import DAL.DTO.Interface.IProduct;
+package Product;
 
 import java.util.List;
 
-public class Product implements IProduct {
+public class ProductDTO implements IProductDTO {
 
     private String productID;
     private int RecipeID;
     private double quentity;
     private List<String> productBatches;
 
-    public Product(String productID, int recipeID, double quentity, List<String> productBatches) {
+    public ProductDTO(String productID, int recipeID, double quentity, List<String> productBatches) {
         this.productID = productID;
         RecipeID = recipeID;
         this.quentity = quentity;
@@ -60,7 +58,7 @@ public class Product implements IProduct {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "ProductDTO{" +
                 "productID='" + productID + '\'' +
                 ", RecipeID=" + RecipeID +
                 ", quentity=" + quentity +

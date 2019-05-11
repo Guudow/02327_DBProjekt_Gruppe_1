@@ -1,15 +1,13 @@
-package DAL.DTO;
+package Commodity;
 
-import DAL.DTO.Interface.ICommodity;
-
-public class Commodity implements ICommodity {
+public class CommodityDTO implements ICommodityDTO {
 
     private int commodityID;
     private double sumOfCommodity;
     private String commodityNames;
     private int reorder;
 
-    public Commodity(int commodityID, int sumOfCommodity, String commodityNames, int reorder) {
+    public CommodityDTO(int commodityID, int sumOfCommodity, String commodityNames, int reorder) {
         this.commodityID = commodityID;
         this.sumOfCommodity = sumOfCommodity;
         this.commodityNames = commodityNames;
@@ -50,7 +48,7 @@ public class Commodity implements ICommodity {
 
     @Override
     public String toString() {
-        return "Commodity{" +
+        return "CommodityDTO{" +
                 "commodityID=" + commodityID +
                 ", sumOfCommodity=" + sumOfCommodity +
                 ", commodityNames='" + commodityNames + '\'' +

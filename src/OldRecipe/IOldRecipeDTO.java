@@ -1,6 +1,6 @@
-package DAL.DTO.Interface;
+package OldRecipe;
 
-public interface IOldRecipe {
+public interface IOldRecipeDTO {
 
     int getOldRecipeID();
 

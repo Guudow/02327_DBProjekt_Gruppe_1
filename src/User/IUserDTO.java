@@ -1,8 +1,8 @@
-package DAL.DTO.Interface;
+package User;
 
 import java.util.List;
 
-public interface IUser {
+public interface IUserDTO {
 
     int getUserID();
 

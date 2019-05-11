@@ -1,10 +1,8 @@
-package DAL.DTO;
-
-import DAL.DTO.Interface.ICommodityBatch;
+package CommidityBatch;
 
 import java.util.List;
 
-public class CommodityBatch implements ICommodityBatch {
+public class CommodityBatchDTO implements ICommodityBatchDTO {
 
     private int batchId;
     private String producerName;
@@ -14,8 +12,8 @@ public class CommodityBatch implements ICommodityBatch {
     private int minimumQuentity;
     private List<String> commodityID;
 
-    public CommodityBatch(int batchId, String producerName, int ingredientID,
-                          double weight, double percenttageDeviation, int minimumQuentity, List<String> commodityID) {
+    public CommodityBatchDTO(int batchId, String producerName, int ingredientID,
+                             double weight, double percenttageDeviation, int minimumQuentity, List<String> commodityID) {
 
         this.batchId = batchId;
         this.producerName = producerName;
@@ -84,7 +82,7 @@ public class CommodityBatch implements ICommodityBatch {
 
     @Override
     public String toString() {
-        return "CommodityBatch{" +
+        return "CommodityBatchDTO{" +
                 "batchId=" + batchId +
                 ", producerName='" + producerName + '\'' +
                 ", ingredientID=" + ingredientID +

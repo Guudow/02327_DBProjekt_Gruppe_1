@@ -1,6 +1,6 @@
-package DAL.DTO.Interface;
+package Commodity;
 
-public interface ICommodity {
+public interface ICommodityDTO {
 
     int getCommodityID();
 

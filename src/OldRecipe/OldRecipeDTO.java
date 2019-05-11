@@ -1,8 +1,8 @@
-package DAL.DTO;
+package OldRecipe;
 
-import DAL.DTO.Interface.IOldRecipe;
+import OldRecipe.IOldRecipeDTO;
 
-public class OldRecipe implements IOldRecipe {
+public class OldRecipeDTO implements IOldRecipeDTO {
 
     private int oldRecipeID;
     private int date;
@@ -10,7 +10,7 @@ public class OldRecipe implements IOldRecipe {
     private int replace;
     private int currentRecipe;
 
-    public OldRecipe(int oldRecipeID, int date, int edition, int replace, int currentRecipe) {
+    public OldRecipeDTO(int oldRecipeID, int date, int edition, int replace, int currentRecipe) {
         this.oldRecipeID = oldRecipeID;
         this.date = date;
         this.edition = edition;
@@ -60,7 +60,7 @@ public class OldRecipe implements IOldRecipe {
 
     @Override
     public String toString() {
-        return "OldRecipe{" +
+        return "OldRecipeDTO{" +
                 "oldRecipeID=" + oldRecipeID +
                 ", date=" + date +
                 ", edition=" + edition +

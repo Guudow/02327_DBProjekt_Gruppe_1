@@ -1,4 +1,4 @@
-package DAL.DAO.Interface;
+package Ingredient;
 
 public interface IIngredientDAO {
 

@@ -1,23 +1,23 @@
-package DAL.DTO;
+package User;
 
-import DAL.DTO.Interface.IUser;
+import User.IUserDTO;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User implements Serializable, IUser {
+public class UserDTO implements Serializable, IUserDTO {
 
     private int userID;
     private String userName;
     private String ini;
     private List<String> rolesID; // RoleID can be the productmanager, Pharmacist & Laboratory
 
-    private User(){
+    private UserDTO(){
         this.rolesID = new ArrayList<>();
     }
 
-    public User(int userID, String userName, String ini, List<String> rolesID) {
+    public UserDTO(int userID, String userName, String ini, List<String> rolesID) {
         this.userID = userID;
         this.userName = userName;
         this.ini = ini;
@@ -68,7 +68,7 @@ public class User implements Serializable, IUser {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "UserDTO{" +
                 "userID=" + userID +
                 ", userName='" + userName + '\'' +
                 ", ini='" + ini + '\'' +

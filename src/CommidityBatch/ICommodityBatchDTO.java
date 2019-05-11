@@ -1,8 +1,8 @@
-package DAL.DTO.Interface;
+package CommidityBatch;
 
 import java.util.List;
 
-public interface ICommodityBatch {
+public interface ICommodityBatchDTO {
 
     int getBatchId();
 

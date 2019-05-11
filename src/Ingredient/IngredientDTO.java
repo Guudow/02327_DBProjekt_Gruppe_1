@@ -1,8 +1,6 @@
-package DAL.DTO;
+package Ingredient;
 
-import DAL.DTO.Interface.IIngredient;
-
-public class Ingredient implements IIngredient {
+public class IngredientDTO implements IIngredientDTO {
 
     private int ingredientID;
     private int batchID;
@@ -11,9 +9,9 @@ public class Ingredient implements IIngredient {
     private String activeSubstance;
     private int percentageDeviation;
 
-    public Ingredient(int ingredientID, int batchID,
-                      int producerID, String excipient, String activeSubstance,
-                      int percentageDeviation) {
+    public IngredientDTO(int ingredientID, int batchID,
+                         int producerID, String excipient, String activeSubstance,
+                         int percentageDeviation) {
         this.ingredientID = ingredientID;
         this.batchID = batchID;
         this.producerID = producerID;
@@ -72,7 +70,7 @@ public class Ingredient implements IIngredient {
 
     @Override
     public String toString() {
-        return "Ingredient{" +
+        return "IngredientDTO{" +
                 "ingredientID=" + ingredientID +
                 ", batchID=" + batchID +
                 ", producerID=" + producerID +
