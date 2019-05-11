@@ -1,0 +1,110 @@
+use s185021;
+
+CREATE TABLE IF NOT EXISTS Producent (
+  producentID INT NOT NULL,
+  producentNavn TEXT NOT NULL,
+  PRIMARY KEY (producentID));
+
+
+CREATE TABLE IF NOT EXISTS Råvarer (
+  råvarerID INT NOT NULL,
+  indholdsstofID INT NOT NULL,
+  sumAfRåvarerBatches INT NULL,
+  råvarerNavn TEXT NULL,
+  genbestilling BIT NULL,
+  PRIMARY KEY (råvarerID));
+
+
+CREATE TABLE IF NOT EXISTS RåvarerBatch (
+  råvarerBatchID INT NOT NULL,
+  producentID INT NULL,
+  råvarerID INT NOT NULL,
+  vægt DECIMAL(12,4) NULL,
+  minimumsMængde DECIMAL(12,4) NULL,
+  PRIMARY KEY (råvarerBatchID),
+  FOREIGN KEY (råvarerID) REFERENCES Råvarer(råvarerID) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY (producentID) REFERENCES Producent (producentID) ON DELETE NO ACTION ON UPDATE NO ACTION);
+
+
+CREATE TABLE IF NOT EXISTS Bruger (
+  brugerID INT NOT NULL,
+  rolleID INT NULL,
+  brugerNavn TEXT NULL,
+  PRIMARY KEY (brugerID));
+
+
+CREATE TABLE IF NOT EXISTS Laborant (
+  rolleID INT NOT NULL DEFAULT 2,
+  brugerID INT NULL,
+  PRIMARY KEY (rolleID),
+  FOREIGN KEY (brugerID) REFERENCES Bruger (brugerID) ON DELETE NO ACTION ON UPDATE NO ACTION);
+
+CREATE TABLE IF NOT EXISTS Indholdsstof (
+  indholdsstofID INT NOT NULL,
+  råvarerID INT NULL,
+  brugerID INT NOT NULL,
+  hjælpestof TEXT NULL,
+  aktivtstof TEXT NULL,
+  procentuelAfvigelse DECIMAL(5,2) NULL,
+  PRIMARY KEY (indholdsstofID),
+  FOREIGN KEY (råvarerID) REFERENCES Råvarer (råvarerID) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY (brugerID) REFERENCES Laborant (brugerID) ON DELETE NO ACTION ON UPDATE NO ACTION);
+
+CREATE TABLE IF NOT EXISTS Farmaceut (
+  rolleID INT NOT NULL DEFAULT 1,
+  brugerID INT NULL,
+  PRIMARY KEY (rolleID),
+  FOREIGN KEY (brugerID) REFERENCES Bruger (brugerID) ON DELETE NO ACTION ON UPDATE NO ACTION);
+
+CREATE TABLE IF NOT EXISTS Opskrift (
+  opskriftID INT NOT NULL,
+  indholdsstofID INT NULL,
+  brugerID INT NULL,
+  dato DATETIME NOT NULL,
+  udgave VARCHAR(45) NOT NULL,
+  PRIMARY KEY (opskriftID),
+  FOREIGN KEY  (indholdsstofID) REFERENCES Indholdsstof (indholdsstofID) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY  (brugerID) REFERENCES Farmaceut (brugerID) ON DELETE NO ACTION ON UPDATE NO ACTION);
+
+CREATE TABLE IF NOT EXISTS Produkt (
+  produktID INT NOT NULL,
+  råvarerID INT NULL,
+  opskriftID INT NULL,
+  råvarerbatchID INT NULL,
+  brugerID INT NULL,
+  produktNavn TEXT NULL,
+  PRIMARY KEY (produktID),
+  FOREIGN KEY  (råvarerID) REFERENCES Råvarer (råvarerID) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY  (opskriftID) REFERENCES Opskrift (opskriftID) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY  (råvarerbatchID) REFERENCES RåvarerBatch (råvarerBatchID) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY  (brugerID) REFERENCES Laborant (brugerID) ON DELETE NO ACTION ON UPDATE NO ACTION);
+
+CREATE TABLE IF NOT EXISTS Produktleder (
+  rolleID INT NOT NULL DEFAULT 3,
+  brugerID INT NULL,
+  PRIMARY KEY (rolleID),
+  FOREIGN KEY (brugerID) REFERENCES Bruger (brugerID) ON DELETE NO ACTION ON UPDATE NO ACTION);
+
+CREATE TABLE IF NOT EXISTS ProduktBatchID (
+  produktBatchID INT NOT NULL,
+  produktID INT NULL,
+  brugerID INT NULL,
+  vægt DECIMAL(12,4) NULL,
+  PRIMARY KEY (produktBatchID),
+  FOREIGN KEY  (produktID) REFERENCES Produkt (produktID) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  FOREIGN KEY  (brugerID) REFERENCES Produktleder (brugerID) ON DELETE NO ACTION ON UPDATE NO ACTION);
+
+CREATE TABLE IF NOT EXISTS GammelOpskrift (
+  gammelOpskriftID INT NOT NULL,
+  opskriftID INT NULL,
+  dato DATETIME NOT NULL,
+  udgave VARCHAR(45) NOT NULL,
+  PRIMARY KEY (gammelOpskriftID),
+  FOREIGN KEY (opskriftID) REFERENCES Opskrift (opskriftID) ON DELETE NO ACTION ON UPDATE NO ACTION);
+
+
+CREATE TABLE IF NOT EXISTS Administator (
+  rolleID INT NOT NULL DEFAULT 4,
+  brugerID INT NULL,
+  PRIMARY KEY (rolleID),
+  FOREIGN KEY (brugerID) REFERENCES Bruger (brugerID) ON DELETE NO ACTION ON UPDATE NO ACTION);

@@ -1,3 +1,5 @@
+package Exception;
+
 public class DALException extends Exception {
 
     private static final long serialVersionUID = 2523570347288049072L;
