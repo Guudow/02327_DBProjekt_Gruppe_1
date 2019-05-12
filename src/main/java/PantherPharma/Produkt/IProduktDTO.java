@@ -1,4 +1,4 @@
-package PantherPharma;
+package PantherPharma.Produkt;
 
 public interface IProduktDTO {
 
@@ -19,7 +19,5 @@ public interface IProduktDTO {
 
     String getProduktNavn();
     void  setProduktNavn(String produktNavn);
-
-
 
 }

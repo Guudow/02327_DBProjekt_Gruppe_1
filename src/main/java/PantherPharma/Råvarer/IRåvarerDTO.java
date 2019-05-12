@@ -1,4 +1,4 @@
-package PantherPharma;
+package PantherPharma.Råvarer;
 
 public interface IRåvarerDTO {
 
@@ -6,15 +6,15 @@ public interface IRåvarerDTO {
     void setRåvarerId(int råvarerId);
 
     int getIndholdsstofId();
-    void setIndholdsstofId();
+    void setIndholdsstofId(int indholdsstofId);
 
     int getSumAfRåvarerBatches();
     void setSumAfRåvarerBatches(int sumAfRåvarerBatches);
 
     String getRåvarerNavn();
+    void setRåvarerNavn(String råvarerNavn);
 
-
-
-
+    boolean getGenbestilling();
+    void setGenbestilling(boolean genbestilling);
 
 }

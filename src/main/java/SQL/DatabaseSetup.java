@@ -82,8 +82,9 @@ public class DatabaseSetup {
             PreparedStatement Bruger = connection.prepareStatement
                     ("CREATE TABLE IF NOT EXISTS Bruger (\n" +
                             "  brugerID INT NOT NULL,\n" +
-                            "  rolleID INT NULL,\n" +
                             "  brugerNavn TEXT NULL,\n" +
+                            "  rolleID INT NULL,\n" +
+                            "  rolleNavn TEXT NOT NULL,\n" +
                             "  PRIMARY KEY (brugerID));");
 
             PreparedStatement Laborant = connection.prepareStatement
@@ -144,8 +145,8 @@ public class DatabaseSetup {
                             "  PRIMARY KEY (rolleID),\n" +
                             "  FOREIGN KEY (brugerID) REFERENCES Bruger (brugerID) ON DELETE NO ACTION ON UPDATE NO ACTION);");
 
-            PreparedStatement ProduktBatchID = connection.prepareStatement
-                    ("CREATE TABLE IF NOT EXISTS ProduktBatchID (\n" +
+            PreparedStatement ProduktBatch = connection.prepareStatement
+                    ("CREATE TABLE IF NOT EXISTS ProduktBatch (\n" +
                             "  produktBatchID INT NOT NULL,\n" +
                             "  produktID INT NULL,\n" +
                             "  brugerID INT NULL,\n" +
@@ -180,7 +181,7 @@ public class DatabaseSetup {
             Opskrift.execute();
             Produkt.execute();
             Produktleder.execute();
-            ProduktBatchID.execute();
+            ProduktBatch.execute();
             GammelOpskrift.execute();
             Administrator.execute();
 
@@ -202,7 +203,7 @@ public class DatabaseSetup {
 
             PreparedStatement dropAllTables = connection.prepareStatement
                     ("DROP TABLE Producent,Råvarer,RåvarerBatch,Bruger,Laborant,Indholdsstof," +
-                            "Farmaceut,Opskrift,Produkt,Produktleder, ProduktBatchID,GammelOpskrift,Administrator;");
+                            "Farmaceut,Opskrift,Produkt,Produktleder, ProduktBatch,GammelOpskrift,Administrator;");
 
             dropAllTables.execute();
 

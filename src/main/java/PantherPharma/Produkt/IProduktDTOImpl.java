@@ -1,4 +1,4 @@
-package PantherPharma;
+package PantherPharma.Produkt;
 
 public class IProduktDTOImpl implements IProduktDTO {
 

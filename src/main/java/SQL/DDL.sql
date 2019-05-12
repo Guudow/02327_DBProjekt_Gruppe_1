@@ -28,8 +28,9 @@ CREATE TABLE IF NOT EXISTS RåvarerBatch (
 
 CREATE TABLE IF NOT EXISTS Bruger (
   brugerID INT NOT NULL,
-  rolleID INT NULL,
   brugerNavn TEXT NULL,
+  rolleID INT NULL,
+  rolleNavn TEXT NOT NULL,
   PRIMARY KEY (brugerID));
 
 
@@ -85,7 +86,7 @@ CREATE TABLE IF NOT EXISTS Produktleder (
   PRIMARY KEY (rolleID),
   FOREIGN KEY (brugerID) REFERENCES Bruger (brugerID) ON DELETE NO ACTION ON UPDATE NO ACTION);
 
-CREATE TABLE IF NOT EXISTS ProduktBatchID (
+CREATE TABLE IF NOT EXISTS ProduktBatch (
   produktBatchID INT NOT NULL,
   produktID INT NULL,
   brugerID INT NULL,
