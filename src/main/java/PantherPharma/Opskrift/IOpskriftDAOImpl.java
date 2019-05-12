@@ -5,28 +5,29 @@ import java.util.List;
 import Exception.DALException;
 
 public class IOpskriftDAOImpl implements IOpskriftDAO {
+
     @Override
-    public void createOpskrift(IOpskriftDTOImpl opskrift, Connection connection) throws DALException {
+    public void createOpskrift(IOpskriftDTO opskrift) throws DALException {
 
     }
 
     @Override
-    public IOpskriftDTOImpl getOpskrift(int id, Connection connection) throws DALException {
+    public IOpskriftDTO getOpskrift(int id) throws DALException {
         return null;
     }
 
     @Override
-    public List<IOpskriftDTOImpl> getOpskriftList(Connection connection) throws DALException {
+    public List<IOpskriftDTO> getOpskriftList() throws DALException {
         return null;
     }
 
     @Override
-    public boolean updateOpskrift(IOpskriftDTOImpl opskrift, Connection connection) throws DALException {
-        return false;
+    public void updateOpskrift(IOpskriftDTO opskrift, Connection connection) throws DALException {
+
     }
 
     @Override
-    public boolean deleteOpskrift(int id, Connection connection) throws DALException {
-        return false;
+    public void deleteOpskrift(int id) throws DALException {
+
     }
 }

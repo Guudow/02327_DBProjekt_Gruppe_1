@@ -8,17 +8,16 @@ import Exception.DALException;
 public interface IOpskriftDAO {
 
     // Create
-    void createOpskrift(IOpskriftDTOImpl opskrift, Connection connection) throws DALException;
+    void createOpskrift(IOpskriftDTO opskrift) throws DALException;
 
     // Read
-    IOpskriftDTOImpl getOpskrift(int id, Connection connection) throws DALException;
-    List<IOpskriftDTOImpl> getOpskriftList(Connection connection) throws DALException;
+    IOpskriftDTO getOpskrift(int id) throws DALException;
+    List<IOpskriftDTO> getOpskriftList() throws DALException;
 
     // Update
-    boolean updateOpskrift(IOpskriftDTOImpl opskrift, Connection connection) throws DALException;
+    void updateOpskrift(IOpskriftDTO opskrift, Connection connection) throws DALException;
 
     // Delete
-    boolean deleteOpskrift(int id, Connection connection) throws DALException;
-
+    void deleteOpskrift(int id) throws DALException;
 
 }
