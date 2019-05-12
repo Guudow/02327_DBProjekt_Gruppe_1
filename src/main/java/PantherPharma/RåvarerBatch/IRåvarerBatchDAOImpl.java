@@ -9,6 +9,9 @@ import java.util.List;
 import Exception.DALException;
 import SQL.DatabaseSetup;
 
+/**
+ * @author s185021
+ */
 public class IRåvarerBatchDAOImpl implements IRåvarerBatchDAO {
 
 
