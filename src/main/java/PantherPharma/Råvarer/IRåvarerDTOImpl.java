@@ -58,4 +58,11 @@ public class IRåvarerDTOImpl implements IRåvarerDTO {
     public void setGenbestilling(boolean genbestilling) {
         this.genbestilling = genbestilling;
     }
+
+    @Override
+    public String toString() {
+        return "RåvarerDTO [råvarerId=" + råvarerId + ", råvarerNavn=" + råvarerNavn + ", " +
+                "indholdsstofId=" + indholdsstofId + ", sumAfRåvarerBatches=" + sumAfRåvarerBatches + ", " +
+                "genbestilling=" + genbestilling + "]";
+    }
 }

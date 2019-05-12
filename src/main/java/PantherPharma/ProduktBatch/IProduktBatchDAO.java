@@ -8,17 +8,13 @@ import Exception.DALException;
 public interface IProduktBatchDAO {
 
     // Create
-    void createProduktbatch(IProduktBatchDTOImpl produktbatch, Connection connection) throws DALException;
+    void createProduktbatch(IProduktBatchDTO produktbatch) throws DALException;
 
     // Read
-    IProduktBatchDTOImpl getProduktbatch(int id, Connection connection) throws DALException;
-    List<IProduktBatchDTOImpl> getProduktbatchList(Connection connection) throws DALException;
+    IProduktBatchDTO getProduktbatch(int produktbatchId) throws DALException;
+    List<IProduktBatchDTO> getProduktbatchList() throws DALException;
 
     // Update
-    boolean updateProduktbatch(IProduktBatchDTOImpl produktbatch, Connection connection) throws DALException;
-
-    // Delete
-    boolean deleteProduktbatch(int id, Connection connection) throws DALException;
-
+    void updateProduktbatch(IProduktBatchDTO produktbatch) throws DALException;
 
 }

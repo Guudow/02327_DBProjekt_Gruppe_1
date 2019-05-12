@@ -55,18 +55,18 @@ public class DatabaseSetup {
 
             PreparedStatement Producent = connection.prepareStatement
                     ("CREATE TABLE IF NOT EXISTS Producent (" +
-                    "  producentID INT NOT NULL," +
-                    "  producentNavn TEXT NOT NULL," +
-                    "  PRIMARY KEY (producentID));");
+                            "  producentID INT NOT NULL AUTO INCREMENT," +
+                            "  producentNavn TEXT NOT NULL," +
+                            "  PRIMARY KEY (producentID));");
 
             PreparedStatement Råvarer = connection.prepareStatement
-            ("CREATE TABLE IF NOT EXISTS Råvarer (\n" +
-                    "  råvarerID INT NOT NULL,\n" +
-                    "  indholdsstofID INT NOT NULL,\n" +
-                    "  sumAfRåvarerBatches INT NULL,\n" +
-                    "  råvarerNavn TEXT NULL,\n" +
-                    "  genbestilling BIT NULL,\n" +
-                    "  PRIMARY KEY (råvarerID));");
+                    ("CREATE TABLE IF NOT EXISTS Råvarer (\n" +
+                            "  råvarerID INT NOT NULL,\n" +
+                            "  indholdsstofID INT NOT NULL,\n" +
+                            "  sumAfRåvarerBatches INT NULL,\n" +
+                            "  råvarerNavn TEXT NULL,\n" +
+                            "  genbestilling BIT NULL,\n" +
+                            "  PRIMARY KEY (råvarerID));");
 
             PreparedStatement RåvarerBatch = connection.prepareStatement
                     ("CREATE TABLE IF NOT EXISTS RåvarerBatch (\n" +
@@ -81,7 +81,7 @@ public class DatabaseSetup {
 
             PreparedStatement Bruger = connection.prepareStatement
                     ("CREATE TABLE IF NOT EXISTS Bruger (\n" +
-                            "  brugerID INT NOT NULL,\n" +
+                            "  brugerID INT NOT NULL AUTO INCREMENT,\n" +
                             "  brugerNavn TEXT NULL,\n" +
                             "  rolleID INT NULL,\n" +
                             "  rolleNavn TEXT NOT NULL,\n" +

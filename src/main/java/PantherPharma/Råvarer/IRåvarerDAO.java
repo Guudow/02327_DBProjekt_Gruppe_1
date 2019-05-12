@@ -1,23 +1,20 @@
 package PantherPharma.Råvarer;
 
-import java.sql.Connection;
-import java.util.List;
-
 import Exception.DALException;
+
+import java.util.List;
 
 public interface IRåvarerDAO {
 
     // Create
-    void createRåvare(IRåvarerDTOImpl råvare, Connection connection) throws DALException;
+    void createRåvare(IRåvarerDTO råvare) throws DALException;
 
     // Read
-    IRåvarerDTOImpl getRåvare(int id, Connection connection) throws DALException;
-    List<IRåvarerDTOImpl> getRåvareList(Connection connection) throws DALException;
+    IRåvarerDTO getRåvare(int råvareID) throws DALException;
+    List<IRåvarerDTO> getRåvareList() throws DALException;
 
     // Update
-    boolean updateRåvare(IRåvarerDTOImpl råvare, Connection connection) throws DALException;
+    void updateRåvare(IRåvarerDTO råvare) throws DALException;
 
-    // Delete
-    boolean deleteRåvare(int id, Connection connection) throws DALException;
 
 }

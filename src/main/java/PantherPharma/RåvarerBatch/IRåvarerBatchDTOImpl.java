@@ -57,4 +57,10 @@ public class IRåvarerBatchDTOImpl implements IRåvarerBatchDTO {
     public void setMinimumsMængde(double minimumsMængde) {
         this.minimumsMængde = minimumsMængde;
     }
+
+    @Override
+    public String toString() {
+        return "RåvarerBatchDTO{" + "RåvarerBatchId=" + råvarerBatchId + ", ProducentId=" + producentId + ", råvarerId=" + råvarerId
+                + ", vægt=" + vægt + ", minimumsMængde" + minimumsMængde + '}';
+    }
 }

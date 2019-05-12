@@ -1,5 +1,7 @@
 package PantherPharma.RåvarerBatch;
 
+import java.sql.Date;
+
 public interface IRåvarerBatchDTO {
 
     int getRåvarerBatchId();
