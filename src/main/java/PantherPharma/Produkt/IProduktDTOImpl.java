@@ -70,4 +70,11 @@ public class IProduktDTOImpl implements IProduktDTO {
     public void setProduktNavn(String produktNavn) {
         this.produktNavn = produktNavn;
     }
+
+    @Override
+    public String toString() {
+        return "{" + " råvarerBatchId='" + råvarerBatchId + "'" + ", produktId='" + produktId + "'"
+                + ", brugerId='" + brugerId + "'" + ", opskriftId='" + opskriftId +
+                "'" + ", produktNavn='" + produktNavn + "'" + ",råvarerId " + råvarerId + " }";
+    }
 }

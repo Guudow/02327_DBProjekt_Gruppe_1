@@ -46,4 +46,10 @@ public class IProduktBatchDTOImpl implements IProduktBatchDTO {
     public void setVægt(double vægt) {
         this.vægt = vægt;
     }
+
+    @Override
+    public String toString() {
+        return "{" + " produktBatchId='" + produktBatchId + "'" + ", produktId='" + produktId + "'"
+                + ", brugerId='" + brugerId + "'" + ", vægt='" + vægt +  "}";
+    }
 }

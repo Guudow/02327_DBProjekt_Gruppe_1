@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS RåvarerBatch (
 
 
 CREATE TABLE IF NOT EXISTS Bruger (
-  brugerID INT NOT NULL,
+  brugerID INT NOT NULL AUTO_INCREMENT,
   brugerNavn TEXT NULL,
   rolleID INT NULL,
   rolleNavn TEXT NOT NULL,

@@ -55,7 +55,7 @@ public class DatabaseSetup {
 
             PreparedStatement Producent = connection.prepareStatement
                     ("CREATE TABLE IF NOT EXISTS Producent (" +
-                            "  producentID INT NOT NULL AUTO INCREMENT," +
+                            "  producentID INT NOT NULL," +
                             "  producentNavn TEXT NOT NULL," +
                             "  PRIMARY KEY (producentID));");
 
@@ -81,7 +81,7 @@ public class DatabaseSetup {
 
             PreparedStatement Bruger = connection.prepareStatement
                     ("CREATE TABLE IF NOT EXISTS Bruger (\n" +
-                            "  brugerID INT NOT NULL AUTO INCREMENT,\n" +
+                            "  brugerID INT NOT NULL AUTO_INCREMENT,\n" +
                             "  brugerNavn TEXT NULL,\n" +
                             "  rolleID INT NULL,\n" +
                             "  rolleNavn TEXT NOT NULL,\n" +

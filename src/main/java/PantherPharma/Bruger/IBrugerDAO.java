@@ -1,23 +1,23 @@
 package PantherPharma.Bruger;
 
-import java.sql.Connection;
-import java.util.List;
-
 import Exception.DALException;
+
+import java.util.List;
 
 public interface IBrugerDAO {
 
     // Create
-    void createBruger(IBrugerDTOImpl bruger, Connection connection) throws DALException;
+    void createBruger(IBrugerDTO bruger) throws DALException;
 
     // Read
-    IBrugerDTOImpl getBruger(int id, Connection connection) throws DALException;
-    List<IBrugerDTOImpl> getBrugerList(Connection connection) throws DALException;
+    IBrugerDTO getBruger(int id) throws DALException;
+
+    List<IBrugerDTO> getBrugerList() throws DALException;
 
     // Update
-    boolean updateBruger(IBrugerDTOImpl bruger, Connection connection) throws DALException;
+    void updateBruger(IBrugerDTO bruger) throws DALException;
 
     // Delete
-    boolean deleteBruger(int id, Connection connection) throws DALException;
+    void deleteBruger(int brugerID) throws DALException;
 
 }
