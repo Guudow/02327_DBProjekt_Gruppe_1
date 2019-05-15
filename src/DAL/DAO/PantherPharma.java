@@ -53,7 +53,7 @@ public class PantherPharma {
             throw new DALException(e.getMessage());
         }
     }
-}
+
 
 
     public void finishedProduct (Product product) throws DALException {
