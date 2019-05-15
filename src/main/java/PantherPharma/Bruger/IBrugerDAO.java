@@ -1,6 +1,6 @@
 package PantherPharma.Bruger;
 
-import Exception.DALException;
+import PantherPharma.Exception.DALException;
 
 import java.util.List;
 

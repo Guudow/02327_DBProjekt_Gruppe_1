@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import Exception.DALException;
+import PantherPharma.Exception.DALException;
 import SQL.DatabaseSetup;
 
 /**
@@ -14,10 +14,11 @@ import SQL.DatabaseSetup;
  */
 public class IRåvarerBatchDAOImpl implements IRåvarerBatchDAO {
 
+    private Connection connection;
 
     @Override
     public void createRåvarerBatch(IRåvarerBatchDTO råvarerBatchDTO) throws DALException {
-        try (Connection connection = DatabaseSetup.createConnection()) {
+        try {
             connection.setAutoCommit(false);
             PreparedStatement preparedStatement = connection.prepareStatement
                     ("INSERT INTO s185021.RåvarerBatch VALUES (?,?,?,?,?)");
@@ -28,7 +29,7 @@ public class IRåvarerBatchDAOImpl implements IRåvarerBatchDAO {
             preparedStatement.setDouble(5, råvarerBatchDTO.getMinimumsMængde());
             preparedStatement.executeUpdate();
             connection.commit();
-
+            connection.setAutoCommit(true);
         } catch (SQLException e) {
             throw new DALException(e.getMessage());
         }
@@ -36,7 +37,7 @@ public class IRåvarerBatchDAOImpl implements IRåvarerBatchDAO {
 
     @Override
     public IRåvarerBatchDTO getRåvarerBatch(int CommodityBatchId) throws DALException {
-        try (Connection connection = DatabaseSetup.createConnection()){
+        try {
             connection.setAutoCommit(false);
             PreparedStatement preparedStatement = connection.prepareStatement
                     ("SELECT * FROM s185021.RåvarerBatch WHERE råvarerBatchID = ?;" );
@@ -52,6 +53,7 @@ public class IRåvarerBatchDAOImpl implements IRåvarerBatchDAO {
             råvarerBatchDTO.setVægt(resultSet.getDouble(4));
             råvarerBatchDTO.setMinimumsMængde(resultSet.getDouble(5));
             connection.commit();
+            connection.setAutoCommit(true);
             return råvarerBatchDTO;
         } catch (SQLException e) {
             throw new DALException(e.getMessage());
@@ -60,7 +62,7 @@ public class IRåvarerBatchDAOImpl implements IRåvarerBatchDAO {
 
     @Override
     public List<IRåvarerBatchDTO> getRåvarerBatchList() throws DALException {
-        try (Connection connection = DatabaseSetup.createConnection()){
+        try {
             connection.setAutoCommit(false);
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM s185021.RåvarerBatch");
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -77,6 +79,7 @@ public class IRåvarerBatchDAOImpl implements IRåvarerBatchDAO {
                 iRåvarerBatchDTOList.add(råvarerBatchDTO);
             }
             connection.commit();
+            connection.setAutoCommit(true);
             return iRåvarerBatchDTOList;
         } catch (SQLException e) {
             throw new DALException(e.getMessage());
@@ -85,7 +88,7 @@ public class IRåvarerBatchDAOImpl implements IRåvarerBatchDAO {
 
     @Override
     public void updateRåvarerBatch(IRåvarerBatchDTO råvarerBatchDTO) throws DALException {
-        try (Connection connection = DatabaseSetup.createConnection()){
+        try {
             connection.setAutoCommit(false);
             PreparedStatement preparedStatement = connection.prepareStatement("UPDATE s185021.RåvarerBatch SET" +
                     "producentID = ?, råvarerID = ?, vægt = ?, minimumsMængde = ?  WHERE råvarerBatchID = ?");
@@ -96,6 +99,7 @@ public class IRåvarerBatchDAOImpl implements IRåvarerBatchDAO {
             preparedStatement.setInt(5,råvarerBatchDTO.getRåvarerBatchId());
             preparedStatement.executeUpdate();
             connection.commit();
+            connection.setAutoCommit(true);
     } catch (SQLException e) {
             throw new DALException(e.getMessage());
         }

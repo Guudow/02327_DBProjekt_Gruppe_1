@@ -1,9 +1,8 @@
 package PantherPharma.ProduktBatch;
 
-import java.sql.Connection;
 import java.util.List;
 
-import Exception.DALException;
+import PantherPharma.Exception.DALException;
 
 public interface IProduktBatchDAO {
 

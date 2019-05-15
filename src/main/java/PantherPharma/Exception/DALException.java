@@ -1,4 +1,4 @@
-package Exception;
+package PantherPharma.Exception;
 
 public class DALException extends Exception {
 

@@ -1,9 +1,7 @@
 package PantherPharma.Bruger;
 
-import java.sql.*;
 import java.util.List;
-import Exception.DALException;
-import SQL.DatabaseSetup;
+import PantherPharma.Exception.DALException;
 
 public class IBrugerDAOImpl implements IBrugerDAO {
 

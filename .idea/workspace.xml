@@ -3,6 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="9008ee90-0d89-4b84-afc9-94707e4a6be7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exception/DALException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/Exception/DALException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/Opskrift/IOpskriftDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/Opskrift/IOpskriftDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/Opskrift/IOpskriftDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/Opskrift/IOpskriftDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/PantherPharmaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/PantherPharmaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/Produkt/IProduktDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/Produkt/IProduktDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/Produkt/IProduktDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/Produkt/IProduktDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/ProduktBatch/IProduktBatchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/ProduktBatch/IProduktBatchDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/ProduktBatch/IProduktBatchDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/ProduktBatch/IProduktBatchDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/Råvarer/IRåvarerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/Råvarer/IRåvarerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/Råvarer/IRåvarerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/Råvarer/IRåvarerDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SQL/DatabaseSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQL/DatabaseSetup.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,10 +47,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/ProduktBatch/IProduktBatchDAOImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SQL/DatabaseSetup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            <state relative-caret-position="773">
+              <caret line="201" column="55" selection-start-line="201" selection-start-column="55" selection-end-line="201" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,50 +58,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Produkt/IProduktDTOImpl.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/PantherPharmaMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="77" column="95" selection-start-line="77" selection-start-column="95" selection-end-line="77" selection-end-column="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Produkt/IProduktDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Produkt/IProduktDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="405">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SQL/DDL.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -94,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDTOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+            <state relative-caret-position="608">
+              <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -109,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-87">
-              <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+            <state relative-caret-position="203">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,13 +101,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/ProduktBatch/IProduktBatchDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDTOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -145,6 +163,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Nikolaj" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -187,12 +210,9 @@
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/Råvarer/IRåvarerDTOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/Råvarer/IRåvarerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/Råvarer/IRåvarerDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/ProduktBatch/IProduktBatchDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/ProduktBatch/IProduktBatchDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/Produkt/IProduktDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SQL/DatabaseSetup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PantherPharma/PantherPharmaMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQL/DDL.sql" />
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/ProduktBatch/IProduktBatchDTOImpl.java" />
@@ -200,6 +220,9 @@
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/PantherPharma/Produkt/IProduktDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PantherPharma/PantherPharmaMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SQL/DatabaseSetup.java" />
       </list>
     </option>
   </component>
@@ -220,6 +243,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,7 +367,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,7 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PantherPharmaMain">
+  <component name="RunManager" selected="Application.DatabaseSetup">
     <configuration name="DatabaseSetup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SQL.DatabaseSetup" />
       <module name="02327_DBProjekt_Gruppe_1" />
@@ -411,6 +434,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DatabaseSetup" />
+        <item itemvalue="Application.PantherPharmaMain" />
         <item itemvalue="Application.PantherPharmaMain" />
         <item itemvalue="Application.DatabaseSetup" />
       </list>
@@ -470,13 +495,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33218000" />
+    <option name="totallyTimeSpent" value="34778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20634921" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20879121" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -485,7 +510,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -624,8 +649,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Indholdsstof/IIndholdsstofDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Opskrift/IOpskriftDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="270">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -653,7 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Exception/DALException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Exception/DALException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
@@ -676,39 +701,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Opskrift/IOpskriftDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDTOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/PantherPharmaMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -717,27 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Produkt/IProduktDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SQL/DatabaseSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="60">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -842,16 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SQL/DDL.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -859,10 +823,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/Bruger/IBrugerDTOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDTOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+        <state relative-caret-position="608">
+          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -873,10 +871,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/RåvarerBatch/IRåvarerBatchDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+        <state relative-caret-position="203">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQL/DatabaseSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="201" column="55" selection-start-line="201" selection-start-column="55" selection-end-line="201" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PantherPharma/PantherPharmaMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import Exception.DALException;
+import PantherPharma.Exception.DALException;
 
 /**
  * @class sets up the database
@@ -186,6 +186,7 @@ public class DatabaseSetup {
             Administrator.execute();
 
             connection.commit();
+            connection.setAutoCommit(true);
 
         } catch (SQLException e) {
             throw new DALException(e.getMessage());
@@ -208,7 +209,7 @@ public class DatabaseSetup {
             dropAllTables.execute();
 
             connection.commit();
-
+            connection.setAutoCommit(true);
         } catch (SQLException e) {
             throw new DALException(e.getMessage());
         }

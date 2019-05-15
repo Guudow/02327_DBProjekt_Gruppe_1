@@ -1,6 +1,6 @@
 package PantherPharma.ProduktBatch;
 
-import Exception.DALException;
+import PantherPharma.Exception.DALException;
 import SQL.DatabaseSetup;
 
 import java.sql.Connection;

@@ -1,9 +1,7 @@
 package PantherPharma.Produkt;
 
-import java.sql.Connection;
 import java.util.List;
-import Exception.DALException;
-import SQL.DatabaseSetup;
+import PantherPharma.Exception.DALException;
 
 public class IProduktDAOImpl implements IProduktDAO {
 

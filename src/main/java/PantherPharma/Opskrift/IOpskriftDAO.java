@@ -2,7 +2,7 @@ package PantherPharma.Opskrift;
 
 import java.sql.Connection;
 import java.util.List;
-import Exception.DALException;
+import PantherPharma.Exception.DALException;
 
 
 public interface IOpskriftDAO {
